@@ -25,9 +25,9 @@ export class StudentController {
     return this.studentService.createStudent(student);
   }
   @Delete(':id')
-  deleteStudent(@Param() index) {
-    return this.studentService.deleteStudent(index.id);
-  }
+  // deleteStudent(@Param() index) {
+  //   return this.studentService.deleteStudent(index.id);
+  // }
   //this is for patch method
   @Patch(':id')
   updateStudent(@Param() id, @Body() student) {
