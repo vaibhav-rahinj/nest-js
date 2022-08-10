@@ -22,7 +22,7 @@ export class StudentService {
   }
 
   updateStudent(id, student) {
-    return (this.students[id] = student);
+    return this.students[id] = student;
   }
 
   updateAllStudent(student) {
